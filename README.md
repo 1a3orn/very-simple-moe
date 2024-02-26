@@ -1,6 +1,6 @@
 # Very Simple MoE
 
-This notebook contains a very simple implementation of a Mixture-of-Experts Transformer.
+This notebook contains a simple implementation of a Mixture-of-Experts Transformer.
 
 It is closest to a [Switch Transformer](https://arxiv.org/abs/2101.03961), in the following respects:
 - It routes each token to one expert like ST
