@@ -8,6 +8,7 @@ It is closest to a [Switch Transformer](https://arxiv.org/abs/2101.03961), in th
 - It shrinks the parameters with which each expert is initialized, per that paper's advice
 
 It also differs from it in many important ways:
+- Per-character encoding, rather than systematic tokenization
 - Switch Transformer, obviously, works on multiple GPUs -- this does not
 - This simple does causal language modeling, while Switch Transformer had a masked language modeling target
 - I use [Hard-Alibi](https://arxiv.org/pdf/2402.01032.pdf) position encoding, which I prefer because of (1) toy experiments that show it generalizing better, and (2) drop-dead simplicity that made it work better than alternatives in my first experiments
